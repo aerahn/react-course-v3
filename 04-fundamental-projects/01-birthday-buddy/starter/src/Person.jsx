@@ -1,10 +1,10 @@
-const Person = (name, age, image) => {
+const Person = ({ name, age, image }) => {
   return (
     <div>
       <h2>{name}</h2>
-      <div>{age}</div>
-      <div>
-        <img src={image} />
+      <h2>{age}</h2>
+      <div className="person">
+        <img className="img" src={image} />
       </div>
     </div>
   );
